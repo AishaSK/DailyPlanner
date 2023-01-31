@@ -1,7 +1,7 @@
 // today variable will be
 var today = moment();
 
-
+// when text is added. save the info etc.
 $(document).ready(function(){
     $("#currentDay").text(moment().format("dddd, MMMM Do")); 
     $(".saveBtn").on("click", function(){
@@ -11,6 +11,7 @@ $(document).ready(function(){
 
     }); 
     
+    //how to get information re each stored hour / block
     $("#7 .description").val(localStorage.getItem("7"));
     $("#8 .description").val(localStorage.getItem("8"));
     $("#9 .description").val(localStorage.getItem("9"));
@@ -31,7 +32,7 @@ $(document).ready(function(){
     timeChange(){
         var currentHour = moment().hour(); 
         
-        //
+        //declaring how past present etc shall  be deduced. 
         $('.time-block').each(function(){
             var idTime = parseInt($(this).attr("id"));
             if (idTime < currentHour){
@@ -46,6 +47,7 @@ $(document).ready(function(){
         })
     }
 
+    
     timeChange();
     var timeInterval = setInterval(timeChange, 1000);
 
