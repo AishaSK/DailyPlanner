@@ -34,7 +34,9 @@ The following animation demonstrates the application functionality:
 
 
 * Application deployed at live URL link:
+https://aishask.github.io/DailyPlanner/
 
 
 * Application GitHub URL link:
+https://github.com/AishaSK/DailyPlanner/settings/pages
 
